@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: auto 0;
+}
+
+h3
+{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+p
+{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: auto 0;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+  a:hover {
+    opacity:0.5;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  
+  
+.container
+{
+    width: 342px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+nav
+{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+hr
+{
+    background-color: #ffffff;
+    height: 3px;
+    border: none;
+    border-radius: 1px;
+}
+  
+  
+.burger
+{
+    display: block;
+}
+  
+  .burger .bar
+  {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    z-index: 1;
+    background: #ffffff;
+    border-radius: 2px;
+  }
+  
+  
+  .burger input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  .burger input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  .burger input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  .burger input:checked ~ ul
+  {
+    transform: none;
+  }
