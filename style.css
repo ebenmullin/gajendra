@@ -34,29 +34,14 @@ p
 a
 {
     text-decoration: none;
-    color: #1E1E23;
-    opacity:1;
-    font-family: 'work sans', sans serif;
+    color: #ffffff;
     font-size: 1.5em;
-    font-weight: 400;
-    transition: 200ms;
 }
 
-  a:hover {
-    opacity:0.5;
-  }
-  ul {
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  
-  
 .container
 {
-    width: 342px;
+    max-width: 80%;
     margin: 0 auto;
-    /* background-color: aqua; */
 }
 
 nav
@@ -66,6 +51,16 @@ nav
     justify-content: space-between;
     align-items: center;
 
+}
+
+.nav-links ul
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 hr
@@ -79,7 +74,7 @@ hr
   
 .burger
 {
-    display: block;
+    display: none;
 }
   
   .burger .bar
@@ -132,8 +127,52 @@ hr
     padding: 10px 0;
     transition-delay: 2s;
   }
-  
-  .burger input:checked ~ ul
+
+@media (max-width: 576px)
+{
+  .burger
   {
-    transform: none;
+    display: block;
+  }
+
+  .nav-links
+  {
+    display: none;
+  }
+    
+}
+
+  @media (min-width: 576px) {
+    .container
+    {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container
+    {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container
+    {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container
+    {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1600px) {
+    .container
+    {
+      max-width: 1380px;
+    }
   }
