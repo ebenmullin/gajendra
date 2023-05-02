@@ -9,3 +9,17 @@ tl
     // .from(".text-container", 1, {opacity: 0, yPercent: 20}, "=-1")
     // .from(".rotate", 1, {opacity: 0}, "=-1")
     // .set(".hero", {"box-shadow": "0 0 50px rgba(0, 0, 0, 0.9)"});
+
+
+$(".burger").click(function(){
+    $(".mobile-menu").toggleClass("active");
+    $(this).toggleClass("active");
+ });
+
+ $(".nav-links li a").click(function() {
+    $(".mobile-menu").removeClass("active");
+ })
+
+ $("#yoo").click(function() {
+    $("body").toggleClass("yoo");
+ })
